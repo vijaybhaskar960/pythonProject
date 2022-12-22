@@ -51,6 +51,8 @@ def add(a, b=5,*c, **d):
 
 add(6,7,3,67,9, name='Vijay', eid=56, empsal="90k",edep="IT")
 
+print("Vijay,Vishu")
+
 
 
 

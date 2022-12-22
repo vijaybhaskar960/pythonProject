@@ -5,6 +5,7 @@ class A:
 obj = A()
 obj.display()
 
+x,y = 10,50
 class One:
     name = "Vijay and Vishu "
     def __int__(self,a):
@@ -13,7 +14,6 @@ class One:
     def add(self):
         print("Instance variables:",self.a)
         print("Static variable:",self.name)
-
 obj1 = One()
 print(obj1.name)
 
@@ -199,7 +199,21 @@ inst = One()
 inst.add()
 One.add()
 
+# Global variable access scenario
+x,y = 10,50
+name = "Reddy"
+class global_var:
+    i,j = 20,5
+    def display(self):
+        a,b = 20,50
+        print("display method")
+        print(self.i*self.j)
+        print(a+b)
+        print(globals()['x']-globals()['y'])
+        print(globals()['name'])
 
+obj = global_var()
+obj.display()
 
 
 

@@ -47,7 +47,7 @@
 2. If you open a file with append mode if file is not exist it will crate file, if file is exist it will add new data after old data.
 
 '''
-f = open(r"C:\Users\Vijay Bhaskar Reddy\PycharmProjects\pythonProject\SeleniumPratice\Open_file.py",'a')
+f = open(r"/Unknown/SeleniumPratice\Open_file.py", 'a')
 
 data = f.write("\n Hi Guys")
 print(data)

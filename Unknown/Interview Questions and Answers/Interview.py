@@ -66,6 +66,20 @@ def sum():
 
 sum()
 
+# Print duplicate values in list
+list = [1,2,34,56,78,7,8,9,7,5,3,2,1,7,8,1,5,4,7,7,8,9,6,2,1,2,2,2,6,6,6,4,5]
+
+unquie_values = []
+duplicate_values = []
+
+for i in list:
+    if i not in unquie_values:
+        unquie_values.append(i)
+    elif i not in duplicate_values:
+        duplicate_values.append(i)
+print(duplicate_values)
+
+
 #
 # # num = int(input("Enter a number is :"))
 #

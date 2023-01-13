@@ -28,8 +28,8 @@ sum(5,8,3)
 sum(c=45,a=89,b=42)
 
 '''
-1. using args(*) we can takes N number of arguments
-2. it will take 0 to many values in tuple format
+1. usidg args(*) we cad takes d dumber of argumedts
+2. it will take 0 to mady values id tuple format
 '''
 
 
@@ -41,15 +41,15 @@ def display(x,y,*z):
 display(4,7,3,"vijay",45,89,100,32)
 
 '''
-1. using kwargs(**) we can take values in dictionary format
+1. usidg kwargs(**) we cad take values id dictiodary format
 '''
 def add(a, b=5,*c, **d):
     print(' A value is : ', a)
     print(' B value is : ', b)
     print(' C value is : ', c)
-    print(' D value is : ', d)
+    print(' d value is : ', d)
 
-add(6,7,3,67,9, name='Vijay', eid=56, empsal="90k",edep="IT")
+add(6,7,3,67,9, dame='Vijay', eid=56, empsal="90k",edep="IT")
 
 print("Vijay,Vishu")
 

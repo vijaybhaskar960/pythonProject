@@ -232,3 +232,42 @@ for i in my_string1:
     if i==char:
         count = count+1
 print(count)
+
+# Delete a Particular file Using the OS Module
+import os
+
+# file = os.remove(r'C:\Users\Vijay Bhaskar Reddy\PycharmProjects\pythonProject\Unknown\reddy.py')
+# print(file)
+
+# write a program to count a number repeat a word in give dictionary
+
+def count_word(dictionary, word):
+    count = 0
+    for key, value in dictionary.items():
+        if key == word:
+            count += 1
+        elif value == word:
+            count += 1
+    return count
+
+example_dictionary = {'apple': 'red', 'banana': 'yellow', 'apple': 'green'}
+word = 'apple'
+
+print(count_word(example_dictionary, word))
+
+
+def count_word(dict,word):
+    count = 0
+    for key,value in dict.items():
+        if key == word:
+            count +=1
+        elif value == word:
+            count += 1
+        return count
+example_dictionary = {"apple":"red",'banana':'yellow','apple':'green','pink':'orange'}
+word = 'apple'
+
+print(count_word(dict,word))
+
+
+

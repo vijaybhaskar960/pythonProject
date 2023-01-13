@@ -3,7 +3,6 @@
 # Read all rows and columns data
 # Read data based on condition
 
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time

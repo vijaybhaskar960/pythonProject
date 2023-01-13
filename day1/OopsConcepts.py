@@ -114,11 +114,11 @@ obj.add()
 1. If you have same method names in class A and class B, then if you Inheritence class A into class B then Class A method will override with class B method.
 '''
 
-class A():
+class A:
     def add(self):
         print("This is a Add method")
 
-class B():
+class B:
     def add(self):
         print("This is a Add Method")
 
@@ -173,7 +173,7 @@ inst2.music()
 
 
 class One():
-    name = 'Jyotsna'
+    name = 'Vishu'
     @classmethod
     def add(cls):
         print("Id of One",id(One))

@@ -4,7 +4,7 @@
 # Tab
 
 from selenium import webdriver
-from selenium.webdriver import keys
+from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 import time
@@ -19,9 +19,8 @@ input.send_keys("Welcome to New world")
 sleep(5)
 act=ActionChains(d)
 # Ctrl+A
-act.key_down(keys.CONTROL)
+act.key_down(Keys.CONTROL)
 act.send_keys('a')
-act.key_up(keys.CONTROL)
+act.key_up(Keys.CONTROL)
 act.perform()
-
 d.close()

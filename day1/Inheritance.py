@@ -189,6 +189,7 @@ class D:
     def __init__(self):
         print("This is class D Method")
 
+
 class E:
 
     def __init__(self):
@@ -197,7 +198,8 @@ class E:
     def display(self):
         print("This is display method")
 
-class F(D,E):
+
+class F(D, E):
 
     def __init__(self):
         print("This is class F Method")
@@ -208,3 +210,30 @@ class F(D,E):
 
 
 obj = F()
+
+a, b = 10, 5
+
+
+class myclass:
+    a, b = 11, 11
+
+    def __init__(self):
+        self.a = 13
+        self.b = 14
+        print(self.a + self.b)
+
+    def add(self):
+        a, b = 1, 2
+        print(a + b)
+        print(self.a + self.b)
+        print(globals()['a'] - globals()['b'])
+        super().__init__()
+
+    @classmethod
+    def num(cls):
+        print(cls.a + cls.b)
+
+
+obj = myclass()
+obj.add()
+obj.num()

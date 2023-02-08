@@ -1,6 +1,5 @@
 import pytest
 
-
 class Test:
 
     @pytest.fixture(autouse=True)

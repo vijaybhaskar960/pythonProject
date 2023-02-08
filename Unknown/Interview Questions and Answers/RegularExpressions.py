@@ -64,3 +64,56 @@ n = "Vijay"
 print(n.isalnum())
 
 
+l = "ABC&#$DEF"
+n =l[2::-1]+l[3:6]+l[6:][2::-1]
+print(n)
+
+
+s = "The network vlan is 10.234.23.41 8080"
+
+import re
+
+p = '\d+[.]\d+[.]\d+[.]\d+\s\d+'
+l = re.findall(p, s)
+for i in l:
+    print(i)
+
+# Output :10.234.23.41 8080
+
+
+import re
+
+s = "Welcome123 reddy 192.168.10.12 8000"
+r = ".+"
+mo = re.findall(r,s)
+print(mo)
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# returns True if number is even
+def check_even(number):
+    if number % 2 == 0:
+          return True
+
+    return False
+
+# Extract elements from the numbers list for which check_even() returns True
+even_numbers_iterator = filter(check_even, numbers)
+
+# converting to list
+# even_numbers = list(even_numbers_iterator)
+#
+# print(even_numbers)
+
+import functools
+f = filter(lambda x:x%2==0,range(1,11))
+print(f)
+
+
+f = list(filter(lambda x:x%2==0,range(1,11)))
+print(f)
+
+numbers = [1,5,6,8]
+R = functools.reduce(lambda x,y:x+y,numbers)
+print(R)
+

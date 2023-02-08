@@ -71,20 +71,17 @@ print(string.count("lo"))
 
 # Second Approach
 
-def print_repeated_words(string):
+def find_repeated_words(string):
     words = string.split()
-    word_count = {}
+    word_list = []
+    repeat_list = []
     for word in words:
-        if word in word_count:
-            word_count[word] += 1
+        if word not in word_list:
+            word_list.append(word)
         else:
-            word_count[word] = 1
-    for word, count in word_count.items():
-        if count > 1:
-            print(f"The word '{word}' appears {count} times in the string.")
+            if word not in repeat_list:
+                repeat_list.append(word)
+    return repeat_list
 
-
-string = "the the quick brown fox jumps over the lazy dog"
-print_repeated_words(string)
 
 

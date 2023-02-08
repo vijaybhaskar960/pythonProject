@@ -1,13 +1,3 @@
-l = "ABC&#$DEF"
-n =l[2::-1]+l[3:6]+l[6:][2::-1]
-print(n)
-
-import re
-
-s = "The network vlan is 10.234.23.41 8080"
-
-m = re.findall("\d+[.]\d+[.]\d+[.]\d+\s\d+",s)
-print(m)
 
 # Write a Python function to sum all the numbers in a list.
 def sum_list(list):
@@ -136,14 +126,6 @@ print(l1)
 l1 = l1.append(l2)
 print(l1)
 
-# Python Program to Calculate the Length of String
-char = "subscribe the channel"
-def length_string(char):
-    count = 0
-    for i in char:
-        count= 1+count
-    return count
-print(length_string(char))
 
 '''
 find all numbers which are divisible by 7 but are not a multiple of 5.
@@ -178,14 +160,8 @@ num =(1,2,3,4,5,6,7,8)
 result=map(lambda x:x+x+x,num)
 print(list(result))
 
-# Python Program to Convert Two Lists Into a Dictionary
-# Using zip and dict methods
 
-number = [4,5,6]
-names = {'Vijay','Reddy','Vishu'}
 
-result = dict(zip(number,names))
-print(result)
 
 my_string = '''The only way to
 learn to programing is
@@ -268,6 +244,25 @@ example_dictionary = {"apple":"red",'banana':'yellow','apple':'green','pink':'or
 word = 'apple'
 
 print(count_word(dict,word))
+
+
+l = [1,4,5,8,9,7,9,5,2,3]
+
+sum = 0
+for i in l:
+    sum = sum+i
+print("Sum of the list is:",sum)
+
+
+class A:
+    def test(self):
+        print('This is Class A Method')
+class B(A):
+    def test(self):
+        print("This is Class B Method")
+obj = B()
+print(obj.test())
+
 
 
 

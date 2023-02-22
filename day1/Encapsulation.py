@@ -45,23 +45,23 @@ class A:
     def __init__(self):
         self.__fname="vijay"
         self.__lname="bashker"
-    # #getter
-    # @property
-    # def fname(self):
-    #     return self.__fname
-    # #setter
-    # @fname.setter
-    # def fname(self,fname):
-    #     self.__fname=fname
-    #
-    # # getter
-    # @ property
-    # def lname(self):
-    #     return self.__lname
-    # # setter
-    # @lname.setter
-    # def lname(self, fname):
-    #     self.__lname = fname
+    #getter
+    @property
+    def fname(self):
+        return self.__fname
+    #setter
+    @fname.setter
+    def fname(self,fname):
+        self.__fname=fname
+
+    # getter
+    @ property
+    def lname(self):
+        return self.__lname
+    # setter
+    @lname.setter
+    def lname(self, fname):
+        self.__lname = fname
 
     def display(self):
         print(self.__fname,self.__lname)

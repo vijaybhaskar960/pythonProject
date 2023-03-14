@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230314 14:57:00.860" rpa="false" schemaversion="3">
+<suite id="s1" name="Data Read" source="C:\Users\vijay\PycharmProjects\pythonProject2\RobotFiles\Data_Read.robot">
+<test id="s1-t1" name="LoginTestwithExecl" line="11">
+<kw name="using">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<msg timestamp="20230314 14:57:01.432" level="FAIL">No keyword with name 'using' found.</msg>
+<status status="FAIL" starttime="20230314 14:57:01.432" endtime="20230314 14:57:01.432"/>
+</kw>
+<status status="FAIL" starttime="20230314 14:57:01.424" endtime="20230314 14:57:01.432">No keyword with name 'using' found.</status>
+</test>
+<status status="FAIL" starttime="20230314 14:57:00.860" endtime="20230314 14:57:01.437"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Data Read">Data Read</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230314 14:57:01.416" level="ERROR">Error in file 'C:\Users\vijay\PycharmProjects\pythonProject2\RobotFiles\Data_Read.robot' on line 3: Resource file '..\Resource\login_resource.robot' does not exist.</msg>
+<msg timestamp="20230314 14:57:01.421" level="ERROR">Error in file 'C:\Users\vijay\PycharmProjects\pythonProject2\RobotFiles\Data_Read.robot' on line 4: Importing library 'DataDriver ../TestData/Demo.xlsx' failed: ModuleNotFoundError: No module named 'DataDriver '
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\vijay\PycharmProjects\pythonProject2\venv\Scripts\robot.exe
+  C:\Program Files\Python311\python311.zip
+  C:\Program Files\Python311\DLLs
+  C:\Program Files\Python311\Lib
+  C:\Program Files\Python311
+  C:\Users\vijay\PycharmProjects\pythonProject2\venv
+  C:\Users\vijay\PycharmProjects\pythonProject2\venv\Lib\site-packages</msg>
+</errors>
+</robot>

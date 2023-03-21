@@ -217,3 +217,16 @@ input = 2
 output = [[int(str(input) + '1')],[int('3' + '4')]]
 print(output)
 # Output : [[21], [34]]
+
+
+# Add particular number end of the list
+
+l = [1,2,3,4,1,5,2,3,1]
+
+for num in l:
+    if num==1:
+        l.remove(num)
+        l.append(num)
+print(l)
+
+# Output : [2, 3, 4, 5, 2, 3, 1, 1, 1]

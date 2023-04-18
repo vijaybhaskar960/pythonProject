@@ -2,7 +2,7 @@
 Documentation
 
 *** Variables ***
-${name}     vijay   vaishu
+${name}     Vijay   Vaishu
 ${Scalar}   Prasad
 *** Test Cases ***
 Test

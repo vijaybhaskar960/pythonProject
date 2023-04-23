@@ -1,6 +1,6 @@
 import pytest
 
-@pytest.fixture(scope="module")
+@pytest.fixture(scope="module", autouse = True)
 def connect_db():
     print("I need to connect employee database")
     yield

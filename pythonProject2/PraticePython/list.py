@@ -85,7 +85,7 @@ my_list = [10, 5, 8, 20, 15]
 second_highest = max([x for x in my_list if x != max(my_list)])
 print(second_highest)
 
-# Print third highest value in list using sort method
+# Print third-highest value in list using sort method
 
 my_list = [10, 5, 8, 20, 15]
 list_sorted = sorted(my_list, reverse=True)
@@ -230,3 +230,89 @@ for num in l:
 print(l)
 
 # Output : [2, 3, 4, 5, 2, 3, 1, 1, 1]
+
+# Reverse a list
+
+l = [6,5,4,3]
+l.reverse()
+print(l)
+
+
+# Second Approach
+
+l = [6,5,4,3]
+new_list = l[::-1]
+print(new_list)
+
+# Third Approach
+
+my_list = [6,5,4,3]
+reverse_list = []
+for i in range(len(my_list)-1, -1, -1):
+    reverse_list.append(my_list[i])
+print(reverse_list)
+
+# Find a target value in given list
+
+data = [3, 6, 5, 7, 3]
+sum = 9
+for n1 in data:
+    for n2 in data:
+        if n1 + n2 == sum:
+            print(n1, n2)
+
+
+l = ["Vijay", "Job", "Kala", "Demo", "Onion", "Ball", "Car", "egle"]
+n = len(l)
+for i in range(n):
+    for j in range(i+1, n):
+        # compare adjacent elements and swap if out of order
+        if l[i].lower() > l[j].lower():
+            temp = l[i]
+            l[i] = l[j]
+            l[j] = temp
+
+# print the sorted list as a formatted string
+output = "[" + ", ".join(["\"" + elem + "\"" for elem in l]) + "]"
+print(output)
+
+
+# Find the maximum characters in string in given list
+
+data = ["Javascript", "Java", "Python","Springboot", "PythonDeveloper"]
+max_length = len(max(data, key=len))
+result = []
+
+for item in data:
+    if len(item) == max_length:
+        result.append(item)
+
+print("Results :", result)
+
+l1 = [1, 2, 3]
+l2 = ['a', 'b', 'c']
+
+output = [str(l2[i])+str(l1[i]) for i in range(len(l1))]
+
+print(output)  # ['a1', 'b2', 'c3']
+
+# Find a largest and smallest value in the list
+
+def find_extremes(lst):
+    largest = smallest = lst[0]
+    for num in lst:
+        if num > largest:
+            largest = num
+        elif num < smallest:
+            smallest = num
+    return largest, smallest
+
+print(find_extremes([10,20,45,8,49,98,2]))
+
+l1 = ["My","Name"]
+l2 = ['is', "Vaishu"]
+l1.extend(l2)
+print(l1)
+m = " ".join(l1)
+print(m)
+

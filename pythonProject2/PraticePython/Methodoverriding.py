@@ -7,7 +7,8 @@ class Demo:
 class Live(Demo):
 
     def m1(self):
-        print("This is m1 Method")
+        print("This is m2 Method")
+        super().m1()
 
 
 

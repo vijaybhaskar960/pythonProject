@@ -12,6 +12,7 @@ class LearnSelenium:
         self.driver = driver
 
 
+
     def click_close_button(self):
         self.driver.find_element(By.XPATH, self.close_button).click()
 
@@ -22,3 +23,4 @@ class LearnSelenium:
 
     def close_browser(self):
         self.driver.close()
+

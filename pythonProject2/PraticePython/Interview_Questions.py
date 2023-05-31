@@ -173,7 +173,7 @@ for char in m:
 print(duplicate)
 
 
-# find a unique values in the below list
+# find a unique values in the below string
 
 s = "test"
 unique =[]
@@ -214,4 +214,41 @@ def count_vowels(string):
             count +=1
     return count
 print(count_vowels("developer"))
+
+
+number = input("Enter phone number: ")
+
+if number.startswith("+91") and len(number) == 13 and number[1:].isdigit():
+    print("The given number is an Indian number starting with +91.")
+else:
+    print("The given number is not an Indian number starting with +91.")
+
+l = ["Vijay", "Job", "Kala", "Demo", "Onion", "Ball", "Car", "Egle", "reddy",'apple']
+
+# Selection sort algorithm to sort list alphabetically (case-insensitive)
+for i in range(len(l)):
+    min_index = i
+    for j in range(i+1, len(l)):
+        if l[j].lower() < l[min_index].lower():
+            min_index = j
+    l[i], l[min_index] = l[min_index], l[i]
+
+# Print sorted list
+print(l)
+
+import re
+
+def is_indian_number(number):
+    # Regular expression to match Indian phone numbers
+    regex = r"^(\+91|0)?[6789]\d{9}$"
+    # Check if the number matches the regex
+    if re.match(regex, number):
+        return True
+    else:
+        return False
+print(is_indian_number('+919603449098'))
+
+
+
+
 

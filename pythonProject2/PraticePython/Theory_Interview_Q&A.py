@@ -10,8 +10,8 @@ In contrast, a deep copy creates a new object with its own memory location, and 
 '''
 How to Manage Memory in Python.
 
-Python provides automatic memory management through its built-in garbage collector. 
-This means that the memory allocation and deallocation is handled automatically by the Python interpreter.
-When an object is no longer needed, the interpreter marks it as garbage and the garbage collector deallocates the memory used by the object.
+Python provides automatic memory management through its built-in garbage collector. This means that the memory 
+allocation and deal-location is handled automatically by the Python interpreter. When an object is no longer needed, 
+the interpreter marks it as garbage and the garbage collector deallocates the memory used by the object.
 
 '''

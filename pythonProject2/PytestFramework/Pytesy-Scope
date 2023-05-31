@@ -10,3 +10,5 @@ session: The fixture will be created and destroyed once per pytest session. All 
 
 Using the appropriate scope parameter can help improve the efficiency of your tests by reducing the number of times fixtures need to be created and destroyed.
 For example, if you have a fixture that creates a database connection, you may want to use a session-scoped fixture so that the database connection is only created once for all your tests, rather than once per test function or module.
+
+

@@ -28,3 +28,5 @@ class A:
 obj1 = A()
 print(obj1.add(1, 2, 3))
 print(obj1.add(9, 80))
+
+

@@ -127,7 +127,6 @@ l = [1, 2, 3, True]
 l.pop()
 print(l)
 
-
 l = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 l1 = []
 
@@ -142,8 +141,8 @@ print(l1)
 
 # Multiplication of two lists
 
-x = [[3,2,1], [6,5,4], [9,8,7]]
-y = [[8,9,7], [8,5,2], [9,5,1]]
+x = [[3, 2, 1], [6, 5, 4], [9, 8, 7]]
+y = [[8, 9, 7], [8, 5, 2], [9, 5, 1]]
 
 x_rows = len(x)
 x_cols = len(x[0])
@@ -154,14 +153,14 @@ result = [[0 for j in range(x_cols)] for i in range(y_cols)]
 for i in range(x_rows):
     for j in range(x_cols):
         for k in range(y_cols):
-            result[i][j] += x[i][k] *y[k][j]
+            result[i][j] += x[i][k] * y[k][j]
 print(result)
 
 # output : [[49, 42, 26], [124, 99, 56], [199, 156, 86]]
 
 
 l = [(1, 2, 3), (4, 5, 6), (7, 8, 9)]
-falttend_list = [ele for tup in l for ele in tup ]
+falttend_list = [ele for tup in l for ele in tup]
 print(falttend_list)
 
 # Output : [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -170,15 +169,13 @@ print(falttend_list)
 x = [(1, 2, 3), (4, 5, 6), (7, 8, 9)]
 y = [(3, 2, 3), (1, 5, 6), (3, 8, 9)]
 
-
 result = []
 for i in range(len(x)):
-    tuple_result = tuple(x[i][j] *y[i][j] for j in range(len(x[i])))
+    tuple_result = tuple(x[i][j] * y[i][j] for j in range(len(x[i])))
     result.append(tuple_result)
 print(result)
 
-
-l = [1,2,3, [4, 5, 6], (7, 8, 9),'Vaishu']
+l = [1, 2, 3, [4, 5, 6], (7, 8, 9), 'Vaishu']
 new_list = []
 for sublist in l:
     if type(sublist) == list:
@@ -187,11 +184,12 @@ for sublist in l:
 
     elif type(sublist) == tuple:
         for item in sublist:
-                new_list.append(item)
+            new_list.append(item)
     else:
         new_list.append(sublist)
 
 print(new_list)
+
 
 # [1, 2, 3, 4, 5, 6, 7, 8, 9, 'Vaishu']
 
@@ -201,30 +199,30 @@ def find_common_elements(list1, list2):
     common_elements = [n for n in list1 if n in list2]
     return common_elements
 
-list1 = [1,2,3,4]
-list2 = [6,2,5,1]
 
-print(find_common_elements(list1,list2))
+list1 = [1, 2, 3, 4]
+list2 = [6, 2, 5, 1]
 
+print(find_common_elements(list1, list2))
 
 input = 1
-output = [[input], [input+1], [input+2],[input+3]]
+output = [[input], [input + 1], [input + 2], [input + 3]]
 print(output)
 
 # Output : [[1], [2], [3], [4]]
 
 input = 2
-output = [[int(str(input) + '1')],[int('3' + '4')]]
+output = [[int(str(input) + '1')], [int('3' + '4')]]
 print(output)
 # Output : [[21], [34]]
 
 
 # Add particular number end of the list
 
-l = [1,2,3,4,1,5,2,3,1]
+l = [1, 2, 3, 4, 1, 5, 2, 3, 1]
 
 for num in l:
-    if num==1:
+    if num == 1:
         l.remove(num)
         l.append(num)
 print(l)
@@ -233,22 +231,21 @@ print(l)
 
 # Reverse a list
 
-l = [6,5,4,3]
+l = [6, 5, 4, 3]
 l.reverse()
 print(l)
 
-
 # Second Approach
 
-l = [6,5,4,3]
+l = [6, 5, 4, 3]
 new_list = l[::-1]
 print(new_list)
 
 # Third Approach
 
-my_list = [6,5,4,3]
+my_list = [6, 5, 4, 3]
 reverse_list = []
-for i in range(len(my_list)-1, -1, -1):
+for i in range(len(my_list) - 1, -1, -1):
     reverse_list.append(my_list[i])
 print(reverse_list)
 
@@ -261,11 +258,10 @@ for n1 in data:
         if n1 + n2 == sum:
             print(n1, n2)
 
-
 l = ["Vijay", "Job", "Kala", "Demo", "Onion", "Ball", "Car", "egle"]
 n = len(l)
 for i in range(n):
-    for j in range(i+1, n):
+    for j in range(i + 1, n):
         # compare adjacent elements and swap if out of order
         if l[i].lower() > l[j].lower():
             temp = l[i]
@@ -276,10 +272,9 @@ for i in range(n):
 output = "[" + ", ".join(["\"" + elem + "\"" for elem in l]) + "]"
 print(output)
 
-
 # Find the maximum characters in string in given list
 
-data = ["Javascript", "Java", "Python","Springboot", "PythonDeveloper"]
+data = ["Javascript", "Java", "Python", "Springboot", "PythonDeveloper"]
 max_length = len(max(data, key=len))
 result = []
 
@@ -292,9 +287,10 @@ print("Results :", result)
 l1 = [1, 2, 3]
 l2 = ['a', 'b', 'c']
 
-output = [str(l2[i])+str(l1[i]) for i in range(len(l1))]
+output = [str(l2[i]) + str(l1[i]) for i in range(len(l1))]
 
 print(output)  # ['a1', 'b2', 'c3']
+
 
 # Find a largest and smallest value in the list
 
@@ -307,12 +303,126 @@ def find_extremes(lst):
             smallest = num
     return largest, smallest
 
-print(find_extremes([10,20,45,8,49,98,2]))
 
-l1 = ["My","Name"]
+print(find_extremes([10, 20, 45, 8, 49, 98, 2]))
+
+l1 = ["My", "Name"]
 l2 = ['is', "Vaishu"]
 l1.extend(l2)
 print(l1)
 m = " ".join(l1)
 print(m)
 
+# Print a Pair of list values
+#
+# l = [1, 1, 2, 2, 4, 5, 6, 2, 1]
+#
+# counts = {}
+# for i in l:
+#     if i in counts:
+#         counts[i] += 1
+#     else:
+#         counts[i] = 1
+# print(counts)
+# num_pairs = 0
+# for key, value in counts.items():
+#     if value >= 2:
+#         num_pairs += 1
+#
+# num_single_values = len(counts) - num_pairs
+#
+# print(f"1 pair = {counts[1] // 2}")
+# print(f"2 pair = {counts[2] // 2}")
+# print(f"single values = {num_single_values}")
+
+
+l = [1, 1, 2, 2, 4, 5, 6, 2, 1]
+
+# create an empty dictionary to store the count of each element
+count_dict = {}
+
+# count the occurrences of each element in the list
+for element in l:
+    if element in count_dict:
+        count_dict[element] += 1
+    else:
+        count_dict[element] = 1
+print(count_dict)
+
+# Creating a List
+List = [1, 2, 3, 4, 5, 6,
+        7, 8, 9, 10, 11, 12]
+
+for i in range(1, 6):
+    List.remove(i)
+
+print(List)
+
+l = ["Vijay", "Job", "Kala", "Demo", "Onion", "Ball", "Car", "Egle", 'reddy']
+
+for i in range(len(l)):
+    min_index = i
+    for j in range(i + 1, len(l)):
+        if l[j].lower() < l[min_index].lower():
+            min_index = j
+    l[i], l[min_index] = l[min_index], l[i]
+
+print(l)
+
+data = ["Javascript", "Java", "Python","Springboot", "PythonDeveloper"]
+
+max_length = len(max(data, key=len))
+result = []
+for item in data:
+    if len(item) == max_length:
+        result.append(item)
+print(result)
+
+data = ["Javascript", "Java", "Python","Springboot", "PythonDeveloper"]
+min_length = len(min(data, key=len))
+result = []
+for item in data:
+    if len(item) == min_length:
+        result.append(item)
+print(result)
+
+
+l = ['apple','banana','grape','pear']
+print([w[0].upper() for w in l])
+
+l = [4, 4, 4, 2, 3, 2, 3]
+
+output = {}
+for num in l:
+    if num in output:
+        output[num].append(num)
+    else:
+        output[num] = [num]
+
+print(output)
+
+# Print negative values only
+list1 = [11, -21, 0, 45, 66, -93]
+for num in list1:
+    if num<0:
+        print(num,end=" ")
+
+# Print positive values only
+list1 = [11, -21, 0, 45, 66, -93]
+for num in list1:
+    if num >= 0:
+        print(num)
+
+l1 = ["eat", "sleep", "repeat"]
+
+# printing the tuples in object directly
+for ele in enumerate(l1):
+    print(ele)
+
+# Print Lost value in below lists
+
+A = [1, 4, 5, 7, 9]
+B = [4, 5, 7, 9]
+
+output = [x for x in A if x not in B]
+print(output)

@@ -14,4 +14,4 @@ class Demo:
 
 Demo.sub(10,5)
 obj = Demo()
-obj.mul(5,6)
+obj.mul(5,60)

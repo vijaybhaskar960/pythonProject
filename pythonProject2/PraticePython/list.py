@@ -426,3 +426,13 @@ B = [4, 5, 7, 9]
 
 output = [x for x in A if x not in B]
 print(output)
+
+mylist = [5, 3, 1, 2, 4]
+s = sorted(mylist, reverse=True)
+print(s)
+
+# Remove duplicate values in list
+my_list = [1, 2, 3, 2, 4, 1, 5, 6, 3]
+unique_list = []
+[unique_list.append(x) for x in my_list if x not in unique_list]
+print(unique_list)

@@ -39,5 +39,3 @@ driver.switch_to.window(child_window_handle)
 print(driver.title)
 time.sleep(5)
 driver.quit()
-
-

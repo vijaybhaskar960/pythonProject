@@ -1,4 +1,4 @@
-1. What are Pickling and Unpickling?
++1. What are Pickling and Unpickling?
 The Pickle module accepts any Python object and converts it into a string representation and dumps it into a file by using the dump function, this process is called pickling.
 While the process of retrieving original Python objects from the stored string representation is called unpickling.
 
@@ -9,3 +9,8 @@ A namespace is a naming system used to make sure that names are unique to avoid 
 What format is enumerate in Python?
 Python enumerate() – What is the Enumerate Function in Python? The enumerate() function in Python takes in a data collection as a parameter and returns an enumerate object.
 The enumerate object is returned in a key-value pair format. The key is the corresponding index of each item and the value is the items
+
+
+
+
+

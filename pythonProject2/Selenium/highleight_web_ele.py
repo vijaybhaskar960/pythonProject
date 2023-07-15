@@ -2,12 +2,13 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 import time
 from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
 
-service_obj = Service(r"C:\Users\vijay\Downloads\chromedriver_win32\chromedriver.exe")
+
 options = webdriver.ChromeOptions()
 options.add_experimental_option('detach', True)
 
-driver = webdriver.Chrome(service=service_obj, options=options)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 driver.get("https://www.amazon.in/")
 driver.maximize_window()
 
@@ -22,3 +23,5 @@ high_light_elements(search_box)
 
 time.sleep(5)
 driver.close()
+
+

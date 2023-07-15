@@ -87,4 +87,120 @@ print(String[0:2], String[-2:])
 String = "python is very easy Language"
 print(String[0].upper() + String[1:])
 
+# Compare two strings matching character
+from itertools import zip_longest
 
+data1 = "Python"
+data2 = "Pytha"
+
+i = 1
+for x, y in zip_longest(data1, data2, fillvalue=" "):
+    if x != y:
+        print(x, y, "-", i)
+        i = i + 1
+
+s = " Hello Vaishu "
+s = s.strip()
+print(s)
+
+s = "  hello Dharshana   "
+s = s.lstrip()
+print(s)  # "hello world   "
+
+s = "  hello Reddy   "
+s = s.rstrip()
+print(s)  # "  hello world"
+
+s = "aaahello worldaaa"
+s = s.strip('a')
+print(s)  # "hello world"
+
+
+# Write python function to count the number of vowels in a given string
+
+def count_vowels(string):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in string:
+        if char in vowels:
+            count += 1
+    return count
+
+
+print(count_vowels("developer"))
+
+# find a unique values in the below list
+
+s = "test"
+unique = []
+for char in s:
+    if s.count(char) == 1 and char not in unique:
+        unique.append(char)
+print(unique)
+
+# find a duplicate values in the below list
+
+l1 = ["india", "is", "my", "country"]
+m = "".join(l1)
+print(m)
+
+duplicate = []
+for char in m:
+    if m.count(char) > 1 and char not in duplicate:
+        duplicate.append(char)
+
+print(duplicate)
+
+
+def capital_first_last(String):
+    words = String.split()
+    capital_words = []
+
+    for word in words:
+        if len(word) > 1:
+            words_capital = word[0].upper() + word[1:-1] + word[-1].upper()
+        else:
+            words_capital = word[0].upper()
+        capital_words.append(words_capital)
+    return " ".join(capital_words)
+
+print(capital_first_last("hello world"))
+
+
+# Remove duplicate values in string
+
+
+def remove_duplicates(String):
+    seen = set()
+    output = ""
+
+    for char in String:
+        if char not in seen:
+            seen.add(char)
+            output += char
+    return output
+
+print(remove_duplicates("Greeks"))
+
+data = "Python is a general purpose and dynamically typed launges "
+odd_index_data = []
+for i in range(0, len(data)):
+    if i % 2 != 0:
+        odd_index_data.append(data[i])
+print(odd_index_data)
+
+
+# Print duplicate characters in given string
+
+m = "Greeks hello"
+duplicates = {}
+for char in m:
+    if char in duplicates:
+        duplicates[char] += 1
+    else:
+        duplicates[char] = 1
+
+print("Duplicate characters:")
+for char, count in duplicates.items():
+    if count > 1:
+        print(char)

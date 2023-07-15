@@ -26,6 +26,7 @@ driver.switch_to.parent_frame()
 print(driver.title)
 time.sleep(5)
 
+
 # Switch to parent window
 parent_window_handle = driver.window_handles[0]
 driver.switch_to.window(parent_window_handle)
@@ -38,5 +39,3 @@ driver.switch_to.window(child_window_handle)
 print(driver.title)
 time.sleep(5)
 driver.quit()
-
-

@@ -1,7 +1,8 @@
 import numpy as np
 
-array = np.array([1,2,3,4])
-print(array/2)
+l = np.array([1,2,3,4])
+
+print(l/2)
 
 l = np.array([9,8,7,6])
 print(l)

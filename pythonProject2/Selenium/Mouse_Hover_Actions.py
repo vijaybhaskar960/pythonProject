@@ -8,6 +8,7 @@ service_obj = Service(r"C:\Users\vijay\Downloads\chromedriver_win32\chromedriver
 options = webdriver.ChromeOptions()
 options.add_experimental_option('detach',True)
 
+
 driver = webdriver.Chrome(service=service_obj,options=options)
 driver.get("https://www.yatra.com/")
 driver.maximize_window()

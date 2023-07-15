@@ -1,0 +1,34 @@
+# xpath of the Email input box below url
+
+https://www.hyrtutorials.com/p/add-padding-to-containers.html
+
+Email-xpath:   //label[text()= 'Email']/following-sibling::input[1]/parent::div
+
+//label[text()= 'Email']/parent::div
+Child-Method: //div[@class="container"]/child::input[@type = 'text']
+
+
+
+AxisName	                       Result
+ancestor	            Selects all ancestors (parent, grandparent, etc.) of the current node
+ancestor-or-self	    Selects all ancestors (parent, grandparent, etc.) of the current node and the current node itself
+attribute	            Selects all attributes of the current node
+child	                Selects all children of the current node
+descendant	            Selects all descendants (children, grandchildren, etc.) of the current node
+descendant-or-self	    Selects all descendants (children, grandchildren, etc.) of the current node and the current node itself
+following	            Selects everything in the document after the closing tag of the current node
+following-sibling	    Selects all siblings after the current node
+namespace	            Selects all namespace nodes of the current node
+parent	                Selects the parent of the current node
+preceding	            Selects all nodes that appear before the current node in the document, except ancestors, attribute nodes and namespace nodes
+preceding-sibling	    Selects all siblings before the current node
+self	                Selects the current node
+
+
+Expression	            Description
+nodename	            Selects all nodes with the name "nodename"
+/	                    Selects from the root node
+//	                    Selects nodes in the document from the current node that match the selection no matter where they are
+.	                    Selects the current node
+..	                    Selects the parent of the current node
+@	                    Selects attributes

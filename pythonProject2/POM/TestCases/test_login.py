@@ -1,5 +1,6 @@
 from selenium import webdriver
 import pytest
+
 from POM.PageObjects.loginpage import LoginPage
 from POM.Utilities.readProperies import ReadConfig
 from POM.Utilities.customLogger import LogGen
@@ -9,7 +10,6 @@ class Test_01_Login:
     baseURL = ReadConfig.getApllicationURL()
     username = ReadConfig.getUserName()
     password = ReadConfig.getPassword()
-
     logger = LogGen.loggen()
 
     def test_homePage_Title(self, setup):

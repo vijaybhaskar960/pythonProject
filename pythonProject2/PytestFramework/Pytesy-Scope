@@ -1,0 +1,14 @@
+In pytest, the scope parameter is used to define the lifetime of fixtures, which are reusable objects that provide test data and/or setup/teardown actions for your tests.
+
+The scope parameter can be used with the @pytest.fixture decorator to set the fixture's lifetime to one of the following levels:
+
+function (default): The fixture will be created and destroyed once per test function that uses it.
+class: The fixture will be created and destroyed once per test class. All test methods within the same class will share the same instance of the fixture.
+module: The fixture will be created and destroyed once per test module. All test functions within the same module will share the same instance of the fixture.
+session: The fixture will be created and destroyed once per pytest session. All test functions across all test modules will share the same instance of the fixture.
+
+
+Using the appropriate scope parameter can help improve the efficiency of your tests by reducing the number of times fixtures need to be created and destroyed.
+For example, if you have a fixture that creates a database connection, you may want to use a session-scoped fixture so that the database connection is only created once for all your tests, rather than once per test function or module.
+
+

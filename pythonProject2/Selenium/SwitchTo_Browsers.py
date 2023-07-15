@@ -19,6 +19,11 @@ driver.get("https://www.flipkart.com/")
 windows = driver.window_handles
 print("default title is:",driver.title)
 
+# for window in windows:
+#     driver.switch_to.window(window)
+#     print(driver.title)
+#
+
 driver.switch_to.window(windows[0])
 print("window0 title is:",driver.title)
 time.sleep(3)

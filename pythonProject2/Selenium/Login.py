@@ -1,11 +1,12 @@
+from pygments import highlight
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
 
-service_obj = Service(r"C:\Users\vijay\Downloads\chromedriver_win32\chromedriver.exe")
 options = webdriver.ChromeOptions()
 options.add_experimental_option('detach',True)
-driver = webdriver.Chrome(service=service_obj,options=options)
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),options=options)
 driver.get("https://www.amazon.in/")
 print(driver.title)
 act_title = "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"

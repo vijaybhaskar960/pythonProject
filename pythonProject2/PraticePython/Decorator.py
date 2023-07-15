@@ -51,3 +51,18 @@ def display():
     return "Good morning"
 
 print(display())
+
+# how to pass parameters in decorator function with example
+def my_decorator(parameter):
+    def wrapper(func):
+        def inner_wrapper(*args, **kwargs):
+            print(f"Decorator parameter: {parameter}")
+            return func(*args, **kwargs)
+        return inner_wrapper
+    return wrapper
+
+@my_decorator("hello")
+def my_function():
+    print("Inside my function")
+
+my_function()

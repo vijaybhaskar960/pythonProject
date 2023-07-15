@@ -3,15 +3,16 @@ from selenium.webdriver.chrome.service import Service
 import time
 from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
 
-service_obj = Service(r"C:\Users\vijay\Downloads\chromedriver_win32\chromedriver.exe")
 options = webdriver.ChromeOptions()
 options.add_experimental_option('detach',True)
 
-driver = webdriver.Chrome(service=service_obj,options=options)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=options)
 driver.get("https://www.yatra.com/")
 driver.maximize_window()
-time.sleep(3)
+time.sleep(5)
+driver.find_element(By.XPATH, '//a[@class="close"]').click()
 start = driver.find_element(By.ID, "BE_flight_origin_city")
 start.click()
 start.send_keys("Bangalore")

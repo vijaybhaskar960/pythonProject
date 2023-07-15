@@ -12,6 +12,7 @@ obj = A()
 obj.display()
 
 
+
 class Myclass:
 
     def __test(self):

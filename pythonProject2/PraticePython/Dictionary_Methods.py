@@ -49,3 +49,10 @@ Dictionary2 = {'apple': 2, 'banana': 4, 'orange': 1, 'kiwi': 3}
 
 d = Dictionary1.update(Dictionary2)
 print(Dictionary1)
+
+my_dict = {"Javascript":2, "Python":1, "C":2}
+print(my_dict)
+m = sorted(my_dict, key=lambda x: my_dict[x])
+print(m)
+
+

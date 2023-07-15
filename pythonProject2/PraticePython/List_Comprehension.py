@@ -38,4 +38,10 @@ y = [9,8,7]
 v = [z[i]+y[i] for i in range(0,len(z))]
 print(v)
 
+# Find out common values in given two lists
 
+l1 = [4,5,6]
+l2 = [2,4,3]
+
+new_list = [n for n in l1 if n in l2]
+print(new_list)

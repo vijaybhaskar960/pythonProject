@@ -91,6 +91,16 @@ for value in my_dict.values():
         duplicate_value[value] = keys
 print(duplicate_value)
 
+# Print fibonacci series
 
+limit = int(input("Enter the limit: "))   # Ask for the limit from the user
+
+# Initialize the first two numbers in the series
+a, b = 0, 1
+
+# Loop through the series and print each number
+while a < limit:
+    print(a)
+    a, b = b, a+b
 
 

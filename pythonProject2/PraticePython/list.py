@@ -139,6 +139,18 @@ print(l1)
 
 # output : [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+
+l = [1,2,3,4,["Vijay", 'Vaishu']]
+l1 = []
+for item in l:
+    if isinstance(item, list):
+        for j in item:
+            l1.append(j)
+    else:
+        l1.append(item)
+
+print(l1)
+
 # Multiplication of two lists
 
 x = [[3, 2, 1], [6, 5, 4], [9, 8, 7]]

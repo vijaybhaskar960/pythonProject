@@ -11,10 +11,10 @@ def test_first(connect_db):
     print("I am Verify the test first employee name and id")
 
 
-def test_Second(connect_db):
+def test_second(connect_db):
     print("I am Verify the test first employee name and id")
 
 
 
-def test_Third(connect_db):
+def test_third(connect_db):
     print("I am Verify the test first employee name and id")

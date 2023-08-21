@@ -5,7 +5,7 @@ class TestDepends:
     @pytest.mark.dependency()
     def test_method1(self):
         print("This is test_method1")
-        assert 1+4 == 5
+        assert 1+4 == 8
 
     @pytest.mark.dependency(depends= ["TestDepends::test_method1"])
     def test_method2(self):

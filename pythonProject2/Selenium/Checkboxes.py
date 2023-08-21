@@ -18,3 +18,4 @@ time.sleep(4)
 driver.find_element(By.CSS_SELECTOR, "input[value='Automation']").click()
 time.sleep(3)
 driver.close()
+

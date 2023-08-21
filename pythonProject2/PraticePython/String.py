@@ -164,6 +164,7 @@ def capital_first_last(String):
         capital_words.append(words_capital)
     return " ".join(capital_words)
 
+
 print(capital_first_last("hello world"))
 
 
@@ -180,6 +181,7 @@ def remove_duplicates(String):
             output += char
     return output
 
+
 print(remove_duplicates("Greeks"))
 
 data = "Python is a general purpose and dynamically typed launges "
@@ -188,7 +190,6 @@ for i in range(0, len(data)):
     if i % 2 != 0:
         odd_index_data.append(data[i])
 print(odd_index_data)
-
 
 # Print duplicate characters in given string
 
@@ -204,3 +205,44 @@ print("Duplicate characters:")
 for char, count in duplicates.items():
     if count > 1:
         print(char)
+
+t = "VijayaredDY@@##$%&"
+new_s = ''
+for i in t:
+    if i.isalpha() or i.isdigit():
+        new_s += i
+print(new_s)
+
+# VijayaredDY
+
+
+t = "VijayaredDY@@##$%&"
+pattern = r'(@@##\$%&)'
+
+matches = re.findall(pattern, t)
+if matches:
+    output = matches[0]
+    print(output)
+else:
+    print("Pattern not matched in the String")
+
+# @@##$%&
+
+def longest_substring_with_distinct_characters(s):
+    start = 0
+    max_length = 0
+    char_index_map = {}  # To store the index of each character's last occurrence
+
+    for end in range(len(s)):
+        if s[end] in char_index_map and char_index_map[s[end]] >= start:
+            start = char_index_map[s[end]] + 1
+        max_length = max(max_length, end - start + 1)
+        char_index_map[s[end]] = end
+
+    return s[start:start + max_length]
+
+s = "aabbbcdef"
+longest_sub = longest_substring_with_distinct_characters(s)
+print(longest_sub)
+
+

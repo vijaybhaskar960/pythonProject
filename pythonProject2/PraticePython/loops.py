@@ -10,7 +10,7 @@
 for i in range(1, 11):
     print(i, end="")
 # Print Add numbers
-for i in range(0, 20, 2):
+for i in range(1, 20, 2):
     print(i, end=" ")
 # Print Even Numbers
 for u in range(2, 20, 2):

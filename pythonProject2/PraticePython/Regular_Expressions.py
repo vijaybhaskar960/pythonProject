@@ -52,3 +52,21 @@ v = "Vijay"
 x = print
 x(v)
 
+import re
+
+
+def is_indian_phone_number(number):
+    # Define the regular expression pattern
+    pattern = r'^\+91[0-9]{10}$'
+
+    # Use re.match() to check if the number matches the pattern
+    if re.match(pattern, number):
+        return True
+    else:
+        return False
+
+
+# Test the function with some examples
+print(is_indian_phone_number("+919876543210"))  # Should return True
+print(is_indian_phone_number("+442071234567"))  # Should return False
+print(is_indian_phone_number("9876543210"))  # Should return False
